@@ -1,0 +1,100 @@
+/* Screen less than (xs-default) ALL PHONES PORTRAIT*/
+@media screen and (min-width: 0px) {
+  * {
+    word-wrap: break-word;
+    }
+  .bg-news {
+    background-color: #f0ebd8;
+  }
+  .bg-desk{
+    background-color: hsl(60,44%, 80%);
+  }
+  h1 {
+    font-size: 20px;
+  }
+  nav {
+    font-size: 14px;
+  }
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  #icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
+    animation: spin 10s infinite linear;
+    position: relative;
+    max-width: 65%;
+    z-index: 999;    
+    transition: max-width 1s, margin-left 2s;
+  }    
+  #icon:hover {
+    max-width: 95%;	
+  }    
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  .foot-container {
+    display: flex;
+    flex-direction: column;
+  } 
+}
+/* Screen greater than (sm) SMALL TABLETS*/
+@media screen and (min-width: 576px) {
+  h1 {
+    font-size: 40px;
+  }
+  #icon {
+    max-width: 50%;
+  }
+  #icon:hover {
+    max-width: 100%;	
+  }
+}
+/* Screen greater than (md) IPAD or TABLETS*/
+@media screen and (min-width: 768px) {
+  #icon {
+    max-width: 30%;
+  }
+  #icon:hover {
+    max-width: 100%;	
+  }
+  .foot-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+/* Screen greater than (lg) LAPTOPS or DESKTOPS*/
+@media screen and (min-width: 992px) {
+  #icon {
+    max-width: 100%;
+    margin-left: calc(50% - 72px);
+    margin-right: auto;
+  }
+  #icon:hover {
+    max-width: 300%;
+    margin-left: -130px;
+  }
+  .border-lg {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: none !important;
+    border-right: none !important;
+  }
+}
+/* Screen greater than (xl) 1200px*/
+@media screen and (min-width: 1200px) {
+  #icon {    
+    margin-left: calc(50% - 84px);
+  }
+  #icon:hover {
+    margin-left: -115px;
+  }
+}

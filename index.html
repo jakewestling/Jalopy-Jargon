@@ -1,137 +1,127 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Jake's Jalopy Jargon</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--Bootstrap-->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
-<!--Extra CSS, Spin, Enlarge Icon on Hover-->
-<style>
-* {
-word-wrap: break-word;
-}
-
-#icon {
-	border-radius: 100%;
-	animation: spin 10s infinite linear;
-	position: relative;
-	z-index: 1;
-	transition: max-width .2s, z-index .2s;
-}
-
-#icon:hover {
-	max-width: 200%;	
-}
-
-@keyframes spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(359deg);
-	}
-}
-</style>
+	<title>Jake's Jalopy Jargon</title>
+	<meta name="description" content="">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<!--Bootstrap-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+		integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
-<div class="container">
+	<div class="py-1 py-md-3 px-1 bg-desk">
+		<div class="container bg-news">
+			<div class="row">
+				<header class="col-12 border border-dark p-3 text-center">
+					<h1><strong><i class="far fa-newspaper"></i> Jake's Jalopy Jargon <i class="fas fa-tools"></i></strong></h1>
+				</header>
+			</div>
+			<div class="row">
+				<nav class="col-12 border-left border-right border-dark p-2 text-center">
+					<h6 class="mb-0">
+						<a href="#" class="px-2"><i class="fas fa-home"></i> Home</a>
+						<a href="#" class="px-2"><i class="fas fa-car"></i> Cars</a>
+						<a href="#" class="px-2"><i class="fas fa-question-circle"></i> Info</a>
+					</h6>
+				</nav>
+			</div>
+			<div class="row">
+				<article class="col-lg-6 border border-dark p-2">
+					<h5 class="font-italic"><strong>Oldsmobile, America's Oldest</strong></h5>
+					<figure>
+						<img src="img/car.jpg" alt="oldsmobile car" class="img-fluid">
+					</figure>
+					<div class="row p-2">
+						<div class="col-md-6 col-lg-4 p-1 p-md-3 p-lg-1">
+							Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam,
+							egestas ac tincidunt a, lacinia vel velit. Morbi ac commodo nulla.</br></br>
+							In condimentum orci id nisl volutpat bibendum. Quisque commodo hendrerit lorem quis egestas. Vivamus rutrum
+							nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur,
+							nisl orci bibendum elit, eu euismod magna sapien ut nibh. Aliquam erat volutpat.
+						</div>
+						<div class="col-md-6 col-lg-4 p-1 p-md-3 p-lg-1">
+							Mauris vel neque sit amet nunc gravida congue sed sit amet purus.</br></br>
+							Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Morbi ac commodo nulla. In condimentum orci
+							id nisl volutpat bibendum. Quisque commodo hendrerit lorem quis egestas. Vivamus rutrum nunc non neque
+							consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci
+							bibendum elit, eu euismod magna sapien ut nibh.
+						</div>
+						<div class="col-lg-4 p-md-3 p-1 p-md-3 p-lg-1">
+							Neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia
+							vel velit. Morbi ac commodo nulla. In condimentum orci id nisl volutpat bibendum. Quisque commodo hendrerit
+							lorem quis egestas. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum,
+							arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.
+						</div>
+					</div>
+				</article>
+				<article class="col-lg-2 border-left border-right border-lg border-dark p-2">
+					<figure>
+						<img src="img/icon.gif" alt="rocket icon" class="img-circle" id="icon">
+					</figure>
+					<h6 class="font-italic"><strong>Iconic Rocket Emblem</strong></h6>
+					Click the rocket emblem above! In condimentum orci volutpat bibendum. Quisque commodo hendrerit lorem quis
+					egestas. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales
+					feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.</br></br>
+					Neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel
+					velit. Morbi ac commodo nulla. In condimentum orci id nisl volutpat bibendum. Quisque
+				</article>
+				<aside class="col-lg-4 border border-dark p-2">
+					<h5 class="font-italic mb-0"><strong>A Sad Day, End of the Road for Olds.</strong></h5>
+					<section class="row px-2 pb-3">
+						<div class="col-sm-6 p-1">
+							Maecenas quis tortor arcu. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam
+							vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut
+							nibh.<br /><br />
+							Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque
+							faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in
+							blandit.
+						</div>
+						<div class="col-sm-6 p-1">
+							Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque
+							faucibus vestibulum.<br /><br />
+							Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat
+							consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.
+						</div>
+					</section>
+					<h5 class="font-italic mb-0"><strong>Oldsmobile for Sale - Hemmings Motor News</strong></h5>
+					<section class="row px-2 pb-3">
+						<div class="col-sm-6 p-1">
+							Maecenas quis tortor arcu. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam
+							vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut
+							nibh.<br /><br />
+							Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque
+							faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in
+							blandit.
+						</div>
+						<div class="col-sm-6 p-1">
+							Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque
+							faucibus vestibulum.<br /><br />
+							Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat
+							consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.
+						</div>
+					</section>
+				</aside>
+			</div>
 
-<div class="row">
-<header class="col-12 border p-3 text-center">	
-	<h1><strong><i class="fab fa-hotjar"></i> Jake's Jalopy Jargon <i class="fab fa-hotjar"></i></strong></h1>
-</header>
-</div>
+			<footer class="row border-left border-right border-bottom border-dark">
+				<div class="col-12 text-center p-1 p-lg-3 foot-container">
+					<span class="px-md-3 px-lg-5">
+						Designed by Jake Westling
+					</span>
+					<span class="px-md-3 px-lg-5">
+						February 11, 2020
+					</span>
+			  </div>
+			</footer>
 
-<div class="row">
-<nav class="col-12 border p-2 text-center">	
-	<h6>
-	<a href="#" class="">Home <i class="fas fa-home"></i></a> ---
-	<a href="#" class="">Cars <i class="fas fa-car"></i></a> ---
-	<a href="#" class="">Questions <i class="fas fa-question-circle"></i></a>
-	</h6>
-</nav>
-</div>
-
-<div class="row">
-<article class="col-6 border p-2">
-
-	<h5 class="font-italic"><strong>Oldsmobile, America's Oldest</strong></h5>
-	<figure>
-	<img src="image/car.jpg" alt="oldsmobile car" class="img-fluid">
-	</figure>
-	
-	<div class="row p-2">
-		<div class="col-4 p-1">
-		Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Morbi ac commodo nulla.</br></br>
-		In condimentum orci id nisl volutpat bibendum. Quisque commodo hendrerit lorem quis egestas. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh. Aliquam erat volutpat.
 		</div>
-		<div class="col-4 p-1">
-		Mauris vel neque sit amet nunc gravida congue sed sit amet purus.</br></br>
-		Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Morbi ac commodo nulla. In condimentum orci id nisl volutpat bibendum. Quisque commodo hendrerit lorem quis egestas. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.
-		</div>
-		<div class="col-4 p-1">
-		Neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Morbi ac commodo nulla. In condimentum orci id nisl volutpat bibendum. Quisque commodo hendrerit lorem quis egestas. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.
-		</div>		
-	</div>
-	
-</article>
-
-<article class="col-2 border p-2">
-	<figure>
-	<img src="image/icon.jpg" alt="rocket icon" class="img-fluid img-circle" id="icon">
-	</figure>
-	<h6 class="font-italic"><strong>Iconic Rocket Emblem</strong></h6>
-	Morbi ac commodo nulla. In condimentum orci id nisl volutpat bibendum. Quisque commodo hendrerit lorem quis egestas. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.</br></br>
-	Neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Morbi ac commodo nulla. In condimentum orci id nisl volutpat bibendum. Quisque
-</article>
-
-<aside class="col-4 border p-2">
-	<h5 class="font-italic"><strong>A Sad Day, End of the Road for Olds.</strong></h5>
-	<section class="row p-2">
-		<div class="col-6 p-1">
-		Maecenas quis tortor arcu. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.<br/><br/>
-		Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit.
-		</div>
-		<div class="col-6 p-1">
-		Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum.<br/><br/>
-		Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.
-		</div>	
-	</section>
-	
-	<h5 class="font-italic"><strong>Oldsmobile for Sale - Hemmings Motor News</strong></h5>
-	<section class="row p-2">
-		<div class="col-6 p-1">
-		Maecenas quis tortor arcu. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.<br/><br/>
-		Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit.
-		</div>
-		<div class="col-6 p-1">
-		Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum.<br/><br/>
-		Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.
-		</div>	
-	</section>
-
-	
-</aside>
-</div>
-
-<footer class="row border">
-<div class="col-2"></div>
-<div class="col-4 p-2 text-center">
-Designed by Jake Westling
-</div>
-<div class="col-4 p-2 text-center">
-February 11, 2020
-</div>
-<div class="col-2"></div>
-</footer>
-
-</div>
+  </div>
 </body>
 </html>
